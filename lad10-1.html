@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+/* Style the form */
+form {
+  width: 500px;
+  height: 400px;
+  margin: 20px auto;
+  border: 1px solid #b6a7a7;
+  padding: 20px;
+  background-image: url("https://eskipaper.com/images/background-wallpapers-15.jpg");
+}
+/* Style the labels */
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* Style the input fields */
+input[type=text],select, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.form-button{
+    display: block;
+  width: 100px;
+  height: 30px;
+  padding: 1px;
+  float: left;
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid red;
+  margin-right: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 20px blue;
+
+}
+.form-button:disabled{
+    color: darkgray;
+    box-shadow: inset 0 0 20px gray;
+
+}
+.form-button:hover{
+    box-shadow: inset 0 0 20px orange;
+}
+.flex-container {
+  display: flex;
+}
+textarea:focus{
+    background-color: yellow;
+    box-shadow: 0 0 3px red;
+}
+</style>
+</head>
+<body>
+<form>
+<h3>Đăng ký thông tin</h3>
+<label for="name">Họ và tên:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="country">Quốc tịch:</label>
+<select id="country" name="country">
+<option value="">Chọn quốc gia</option>
+<option value="Vietnam">Việt Nam</option>
+<option value="China">Trung Quốc</option>
+<option value="Japan">Nhật Bản</option>
+<option value="USA">Hoa Kỳ</option>
+<option value="France">Pháp</option>
+<option value="UK">Anh</option>
+</select>
+<label for="note">Ghi chú:</label>
+<textarea id="note" name="note" rows="5" tabindex="2"></textarea>
+
+<button class="form-button" tabindex="3">Thêm</button>
+<button class="form-button" tabindex="4">Sửa</button>
+<button class="form-button" disabled="">Xóa</button>
+</form>
+</body>
+</html>
