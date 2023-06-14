@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Giỏ Hàng</title>
+        <style>
+            /* css cho bảng */
+table {
+  border-collapse: collapse; /* loại bỏ đường viền kép */
+  width:50%;
+  height: 50%;
+  margin-top: 10%;
+  margin-left: 20%;
+ 
+}
+
+/* css cho ô */
+th, td {
+  border: 1px solid black; /* đường viền màu đen */
+  padding: 10px; /* khoảng cách giữa nội dung và đường viền */
+  text-align: center; /* căn giữa nội dung */
+}
+
+/* css cho tiêu đề */
+thead {
+  background-color: yellow; /* màu nền vàng */
+  font-weight: bold; /* chữ đậm */
+}
+
+/* css cho chân trang */
+tfoot {
+  background-color: green; /* màu nền xanh lá */
+  color: white; /* màu chữ trắng */
+}
+
+/* css cho hàng chẵn */
+tbody tr:nth-child(even) {
+  background-color: lightgray; /* màu nền xám nhạt */
+}
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+              <tr>
+                <th>Sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nước Cân Bằng Klairs Supple Preparation</td>
+                <td>260.000đ</td>
+                <td>2</td>
+                <td>520.000đ</td>
+              </tr>
+              <tr>
+                <td>Kem Chống Nắng Heliocare 360 Protector Solar Water Gel Sunscreen SPF50+ 50ml</td>
+                <td>470.000</td>
+                <td>1</td>
+                <td>470.000</td>
+              </tr>
+              <tr>
+                <td>Kem Chống Nắng KHT</td>
+                <td>600.000đ</td>
+                <td>1</td>
+                <td>600.000đ</td>
+              </tr>
+              <tr>
+                <td>Dưỡng Tóc Ogx Renewing-Argan Oil Of Morocco</td>
+                <td>215.000đ</td>
+                <td>2</td>
+                <td>415.000đ</td>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Tổng cộng</td>
+                <td></td>
+                <td></td>
+                <td>2.190.000đ</td>
+              </tr>
+            </tfoot>
+          </table>
+          
+          
+    </body>
+</html>

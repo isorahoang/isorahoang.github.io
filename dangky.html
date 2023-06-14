@@ -1,0 +1,82 @@
+<style>
+    form {
+      width: 400px;
+      height: 330px;
+      margin: 20% auto;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-image:url("https://th.bing.com/th/id/OIP.mRmVL93NTAQdDqFaaVXALwHaFj?w=257&h=193&c=7&r=0&o=5&pid=1.7") ;
+    }
+  
+    div {
+      margin: 10px 0;
+    }
+  
+    label {
+      display: inline-block;
+      width: 120px;
+      font-weight: bold;
+    }
+  
+    input {
+      display: inline-block;
+      width: 250px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    a {
+      text-decoration:none;
+      text-align: center;
+    }
+  
+    button,a {
+      display: block;
+      width: 100px;
+      padding: 10px;
+      margin: 0 auto;
+      background-color: #0099ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      float: left;
+      margin-right: 20px;
+    }
+  
+    button:hover {
+      background-color: #0066cc;
+    }
+    a:hover {
+      background-color: #0066cc;
+    }
+  </style>
+  
+  <form>
+    <h1>Đăng Ký Tài Khoản </h1>
+    <div>
+      <label for="name">Họ tên:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="username">Tên đăng nhập:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Mật khẩu:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <label for="confirm_password">Nhập lại mật khẩu:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required>
+    </div>
+    <div>
+      <label for="birthday">Ngày sinh:</label>
+      <input type="date" id="birthday" name="birthday" required>
+    </div>
+    <div>
+      <button type="submit">Đăng kí</button>
+      <a href="F:\ôn lại\dăngnhap.html">Đăng Nhập</a>
+    </div>
+  </form>
+  

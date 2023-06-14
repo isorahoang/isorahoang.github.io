@@ -1,0 +1,199 @@
+*{
+  margin:  0px;
+}
+.menu {
+  padding: 2px;
+  overflow: visible;
+  background-color: #333;
+  position: relative;
+  height: 50px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: inline-block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.menu ul li a:hover {
+  color: red;
+  background-color: whitesmoke;
+}
+.sub-menu {
+  background-color: aquamarine;
+  height: auto;
+  width: 200px; 
+  display: none;
+  z-index: 100;
+}
+.menu li:hover .sub-menu {
+  display: block;
+  position: absolute;
+}
+
+
+.top-img {
+  background-image: url("https://adminbeauty.hvnet.vn/Upload//files/cocoon-my-pham-thuan-chay-viet-nam-18122021091545.jpg");
+  /* Điều chỉnh kích thước hình ảnh để phù hợp với chiều rộng của div */
+  background-size: cover;
+  /* Đặt hình ảnh ở giữa div */
+  background-position: center;
+  /* Không lặp lại hình ảnh */
+  background-repeat: no-repeat;
+  /*đặt chiều cao*/
+  height: 300px;
+}
+.body-a{
+  float: left;
+  width: 80%;
+  display: inline-block;
+}
+.bod{
+  margin-left: 50px;
+  margin-right: 50px;
+  border: none;
+  width: 70%;
+  display: inline-block;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  float: left;
+}
+
+.product {
+  width: 220px;
+  height: 330px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  padding: 10px;
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product h3 {
+  font-size: 15px;
+  font-weight: bold;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.price {
+  display: flex; /* sử dụng flexbox để bố trí các phần tử con */
+  flex-direction: column; /* sắp xếp các phần tử con theo chiều dọc */
+  align-items: center; /* căn giữa các phần tử con theo chiều ngang */
+  font-family: Impact;
+}
+
+.product p.price {
+  font-size: 25px;
+  color: red;
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 3px;
+
+}
+
+.old-price {
+  font-size: 20px; /* kích thước chữ của giá cũ là 14px */
+  color: #999; /* màu chữ của giá cũ là màu xám */
+  text-decoration: line-through; /* gạch ngang chữ của giá cũ */
+  margin-right: 10px; /* tạo khoảng cách 10px giữa giá cũ và giá mới */
+}
+/*icon*/
+.product > .icons {
+  right: 5px;
+  bottom: 5px;
+ font-size: 10px;
+ position: absolute;
+ width: 25px;
+}
+.product >.icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.product > .new-icon {
+  top: 0px;
+  position: absolute;
+  right: 0px;
+  font-size: 7px;
+  width: 45%;
+  height: 30%;
+}
+/* CSS */
+.sidebar {
+top: auto;
+width: 20%; /* Chiều rộng của cạnh bên */
+height: 100%; /* Chiều cao của cạnh bên */
+right: 0; /* Đặt cạnh bên ở bên phải */
+background-color: wheat; /* Màu nền của cạnh bên */
+overflow: auto; /* Cho phép cuộn nếu có nhiều nội dung */
+position: absolute; /* Đặt vị trí tuyệt đối cho cạnh bên */
+padding: 10px;
+text-align: center;
+}
+.sidebar-top{
+font-size: 30px;
+width: 100%;
+color: red;
+}
+.news-item {
+  height: 400px;
+  text-align: center;
+  margin: 10px 40px;
+
+}
+
+.news-item img {
+  width: 200px; /* Chiều rộng của hình ảnh sản phẩm */
+  height:300px ;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.news-item h4 {
+  font-size: 17px; /* Kích thước chữ của tên sản phẩm */
+}
+
+.news-item p {
+  font-size: 10px; /* Kích thước chữ của mô tả sản phẩm */
+}
+
+.news-item a {
+  display: block; /* Hiển thị liên kết xem chi tiết dưới dạng khối */
+  text-align: center; /* Căn giữa liên kết xem chi tiết */
+}
+
+.content {
+  margin-right: calc(35% + 20px); /* Tạo khoảng cách giữa nội dung chính và cạnh bên */
+}
+/*chân*/
+.footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #786c6c;
+    color: black;
+    clear: both;
+}
